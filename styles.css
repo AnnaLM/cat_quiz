@@ -9,20 +9,46 @@ p {
 
 .backing {
     width: 1000px;
-    height: 500px;
+    height: 700px;
     background: rgb(155, 153, 252);
     top:50%;
     left:50%;
     position:fixed;
-    margin-top: -250px;
+    margin-top: -300px;
     margin-left: -500px;
 }
 
 .centeredText {
     margin: 0;
     position: absolute;
-    top: 50%;   
+    top: 100px;
     left: 50%;         
-    -ms-transform: translate(-50%, 50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
+button {
+    display: inline-block;
+    border: none;
+    padding: 4px 5px;
+    margin: 5px 0px;
+    text-decoration: none;
+    background: rgb(246, 246, 255);
+    color: black;
+    font-family: verdana;
+    font-size: medium;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;    
+    border-radius: 20px;
+    transition: background 250ms ease-in-out, 
+}
+select {
+    width: 100%;
+    padding: 4px 5px;
+    border: none;
+    border-radius: 20px;    
+    margin: 5px 0px;
+    background-color: rgb(246, 246, 255);
+    font-family: verdana;
+    font-size: medium;
+}  
