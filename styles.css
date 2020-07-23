@@ -10,7 +10,7 @@ p {
 .backing {
     width: 1000px;
     height: 1000px;
-    background: rgb(155, 153, 252);
+    background: rgb(129, 236, 143);
     left:50%;
     position:fixed;
     margin-left: -500px;
@@ -31,7 +31,7 @@ button {
     margin: 20px 0px;
     margin-bottom: 50px;
     text-decoration: none;
-    background: rgb(8, 73, 82);
+    background: rgb(202, 39, 88);
     color: white;
     font-family: verdana;
     font-size: medium;
@@ -48,7 +48,7 @@ button {
     margin: 20px 0px;
     margin-bottom: 50px;
     text-decoration: none;
-    background: rgb(8, 73, 82);
+    background: rgb(202, 39, 88);
     color: white;
     font-family: verdana;
     font-size: medium;
