@@ -11,11 +11,65 @@
     <div class="backing"> </div>
     <div class="centeredText">
         <h1>Get matched with a cat!</h1>
-        <form>
-            <input type="text"><br>
+        <form id="cats">
+            <label for="medical">Are you able to care for a cat with existing medical conditions? </label><br>
+            <select id="medical" name="medical">
+                <option value="1">I am unable to care for a cat with any significant medical conditions</option>
+                <option value="2">I can care for a cat with some medical conditions, but nothing too major</option>
+                <option value="3">I can care for any cat, regardless of medical conditions</option>
+            </select><br>
+            <label for="age">Do you have preferences in terms of age?  </label><br>
+            <select id="age" name="age">
+                <option value="3">Yes, older cat (10 or older)</option>
+                <option value="2">Yes, younger cat (2 or younger)</option>
+                <option value="1">Yes, middle aged (Between 2 or 10 years old)</option>
+                <option value="0">No, I do not have any preference</option>
+            </select><br>
+            <label for="age2">Are you looking for a cat with lots of energy?  </label><br>
+            <select id="age2" name="age2">
+                <option value="3">Yes, I would like a cat that is very energetic</option>
+                <option value="2">I would like a cat that is playful but not too rowdy</option>
+                <option value="1">No, I would like a cat that is calmer</option>
+                <option value="0">I do not have any preference</option>
+            </select><br>
+            <label for="snuggle">Are you looking for a snuggly cat who likes pets? </label><br>
+            <select id="snuggle" name="snuggle">
+                <option value="3">Yes, I only want a cuddly cat</option>
+                <option value="2">No, I do not want an overly affectionate cat </option>
+                <option value="1">I do not have a preference</option>
+            </select><br>
+            <label for="money">How much money are you prepared to spend on your cat?</label><br>
+            <select id="money" name="money">
+                <option value="3">I have few limits to my spending</option>
+                <option value="2">I can spend some but not too much </option>
+                <option value="1">I am looking to spend as little as possible</option>
+            </select><br>
+            <label for="routine">Are you able to keep a consistent routine for your cat? </label><br>
+            <select id="routine" name="routine">
+                <option value="1">Yes</option>
+                <option value="0">No </option>
+            </select><br>
+            <label for="pets">Do you have other pets, or plan on adopting other pets? </label><br>
+            <select id="pets" name="pets">
+                <option value="1">Yes</option>
+                <option value="0">No </option>
+            </select><br>
+            <label for="kids">Do you have young children, or plan on having children in the near future? </label><br>
+            <select id="kids" name="kids">
+                <option value="1">Yes</option>
+                <option value="0">No </option>
+            </select><br>
+            <label for="disp">Please check any dispositions in cats which appeal to you:</label><br>
+            <select id="disp" name="disp">
+                <option value="3">Shy</option>
+                <option value="2">Affectionate</option>
+                <option value="1">Energetic</option>
+            </select><br>
+            <button onClick=returnVal()>Submit</button>
         </form>
+        <p id="secondResult"></p>
     </div>
     
-    <!--<script src = "index.js"></script>-->
+    <script src = "index.js"></script>
 </body>
 </html>
