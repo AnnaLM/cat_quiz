@@ -53,6 +53,7 @@ button {
     font-family: verdana;
     font-size: medium;
     line-height: 1;
+    width: 100px;
     cursor: pointer;
     text-align: center;    
     border-radius: 20px;
