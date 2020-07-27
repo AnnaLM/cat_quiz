@@ -1,7 +1,7 @@
 body {
     font-family: verdana;
     color: black;
-    background-color: rgb(246, 246, 255);
+    background-color: rgb(129, 236, 143);
 }
 p {
     font-size:large;
@@ -10,7 +10,7 @@ p {
 .backing {
     width: 1000px;
     height: 1000px;
-    background: rgb(129, 236, 143);
+    background: rgb(246, 246, 255);
     left:50%;
     position:fixed;
     margin-left: -500px;
@@ -61,10 +61,11 @@ button {
 select {
     width: 100%;
     padding: 4px 5px;
-    border: none;
     border-radius: 20px;    
     margin: 5px 0px;
-    background-color: rgb(246, 246, 255);
+    border-color: black;
+    border-width: 2px;
     font-family: verdana;
+    background-color: rgb(221, 221, 221);
     font-size: medium;
 }  
