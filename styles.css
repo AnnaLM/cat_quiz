@@ -31,7 +31,7 @@ button {
     margin: 20px 0px;
     margin-bottom: 50px;
     text-decoration: none;
-    background: rgb(202, 39, 88);
+    background: rgb(144, 52, 180);
     color: white;
     font-family: verdana;
     font-size: medium;
@@ -48,7 +48,7 @@ button {
     margin: 20px 0px;
     margin-bottom: 50px;
     text-decoration: none;
-    background: rgb(202, 39, 88);
+    background: rgb(144, 52, 180);
     color: white;
     font-family: verdana;
     font-size: medium;
@@ -73,3 +73,9 @@ select {
     background-color: rgb(221, 221, 221);
     font-size: medium;
 }  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
