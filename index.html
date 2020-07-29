@@ -8,10 +8,12 @@
     <style></style>
 </head>
 <body>
+    <!--add all text centered and within white box-->
     <div class="backing"> </div>
     <div class="centeredText">
         <h1 id="title">Looking to adopt a cat?</h1>
         <h2 id="subhead">Fill out the questionaire to get matched with a cat in Toronto</h2>
+        <!--form for users to enter their preferences for a cat-->
         <form id="catQuiz">
             <label for="medical">Are you able to care for a cat with existing medical conditions? </label><br>
             <select id="medical" name="medical">
@@ -77,6 +79,7 @@
         </form>        
         <button id="go" onClick=returnVal()>Find me a cat!</button>  
     </div> 
+    <!--elements pulled up when a match is found-->
     <div class="centeredText">  
         <h1 id="congrats"style="text-align:center"></h1>      
         <h2 id="matchHead" style="text-align:center"></h2>

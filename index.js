@@ -1,15 +1,18 @@
-
+//array representing different cats for adoption, manually evaluated based on their online bios
 let cats = [[3,3,2,2,3,2,0,0,2],[3,1,1,2,3,2,2,0,0],[3,3,2,2,3,2,3,0,0],[2,3,2,1,2,1,3,1,0],[2,2,2,0,2,1,3,0,0],[2,3,2,2,2,2,1,0,0],[2,2,2,1,2,1,3,0,0],[2,3,2,2,2,1,2,0,0]];
 //old colours:
 //background: rgb(246, 246, 255)
 //box: rgb(155, 153, 252)
 //button: rgb(8, 73, 82)
+//main function called when "find me a cat" button is clicked
 function returnVal(){
     let answers = [];
+    //collect answers from form
     for (i = 0; i < 9; i ++){
         answers += document.getElementById("catQuiz").elements[i].value;
     }
     results = findMax(answers);
+    //display elements after match is found 
     document.getElementById("catQuiz").style.display='none';
     document.getElementById("title").style.display='none';
     document.getElementById("subhead").style.display='none';
@@ -20,10 +23,9 @@ function returnVal(){
     document.getElementById("catPic").src = results[1];
     document.getElementById("catPic").alt = "photo of cat chosen";
     document.getElementById("toCat").style.display='block';    
-    //document.getElementById("toCat").style = "text-align:center";
     document.getElementById("toCat").href = results[2];
 }
-
+//find which cat in the array is the best match, and return the name, photo, and link to the cat
 function findMax(ans){
     let maxCat = 0;
     let maxVal = 0;
@@ -84,7 +86,7 @@ function findMax(ans){
     }
     return [catName,imagePath,catLink];
 }
-
+//calculate the match between a cat and the form response
 function matchCat(cat, answers){
     let matchScore = [];
     denom = 8;
@@ -98,9 +100,3 @@ function matchCat(cat, answers){
     }
     return matchScore/denom;
 }
-/*
-top: 50%;   
-    left: 50%;         
-    -ms-transform: translate(-50%, 50%);
-    transform: translate(-50%, -50%);
-    */
