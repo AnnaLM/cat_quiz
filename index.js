@@ -1,5 +1,5 @@
 //array representing different cats for adoption, manually evaluated based on their online bios
-let cats = [[3,3,2,2,3,2,0,0,2],[3,1,1,2,3,2,2,0,0],[3,3,2,2,3,2,3,0,0],[2,3,2,1,2,1,3,1,0],[2,2,2,0,2,1,3,0,0],[2,3,2,2,2,2,1,0,0],[2,2,2,1,2,1,3,0,0],[2,3,2,2,2,1,2,0,0]];
+let cats = [[3,3,2,2,3,2,0,0,2],[3,3,2,2,3,2,3,0,0],[2,3,2,1,2,1,3,1,0],[2,2,2,0,2,1,3,0,0],[2,3,2,2,2,2,1,0,0],[2,2,2,1,2,1,3,0,0],[2,3,2,2,2,1,2,0,0]];
 //old colours:
 //background: rgb(246, 246, 255)
 //box: rgb(155, 153, 252)
@@ -46,36 +46,31 @@ function findMax(ans){
             catLink = "https://www.torontohumanesociety.com/adopt-a-pet/cats/40653765";
             break;
         case 1:
-            catName = "Ghost Pepper";
-            imagePath = "/images/ghostPepper.jpg";
-            catLink = "https://www.torontohumanesociety.com/adopt-a-pet/cats/41781951";
-            break;
-        case 2:
             catName = "Buddy";
             imagePath = "/images/buddy.jpg";
             catLink = "https://www.torontohumanesociety.com/adopt-a-pet/cats/42296131";
             break;
-        case 3:
+        case 2:
             catName = "Misty";
             imagePath = "/images/misty.jpg";
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=39314301&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
             break;
-        case 4:
+        case 3:
             catName = "Sweetie";
             imagePath = "/images/sweetie.jpg";
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=40315480&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
             break;
-        case 5:
+        case 4:
             catName = "Chuck";
             imagePath = "/images/chuck.jpg";
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=43998451&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
             break;
-        case 6:
+        case 5:
             catName = "Bridget";            
             imagePath = "/images/bridget.jpg";
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=44403726&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
             break;
-        case 7:
+        case 6:
             catName = "Felix";
             imagePath = "/images/felix.jpg";
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=45002815&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
