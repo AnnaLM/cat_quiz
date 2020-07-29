@@ -1,5 +1,5 @@
 //array representing different cats for adoption, manually evaluated based on their online bios
-let cats = [[3,3,2,2,3,2,0,0,2],[3,3,2,2,3,2,3,0,0],[2,3,2,1,2,1,3,1,0],[2,2,2,0,2,1,3,0,0],[2,3,2,2,2,2,1,0,0],[2,2,2,1,2,1,3,0,0],[2,3,2,2,2,1,2,0,0]];
+let cats = [[3,3,2,2,3,2,0,0,2],[3,3,2,2,3,2,3,0,0],[2,3,2,1,2,1,3,1,0],[2,2,2,0,2,1,3,0,0],[2,3,2,2,2,2,1,0,0],[2,2,2,1,2,1,3,0,0],[3,3,3,2,3,2,2,0,0],[1,1,1,2,1,1,2,2,0]];
 //old colours:
 //background: rgb(246, 246, 255)
 //box: rgb(155, 153, 252)
@@ -71,12 +71,14 @@ function findMax(ans){
             catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=44403726&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
             break;
         case 6:
-            catName = "Felix";
-            imagePath = "/images/felix.jpg";
-            catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=45002815&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
-            break;
+            catName = "Peachy";
+            imagePath = "/images/peachy.jpg";
+            catLink = "https://www.torontohumanesociety.com/adopt-a-pet/cats/41266030";
+        case 7:
+            catName = "Harrison";
+            imagePath = "/images/harrison.jpg";
+            catLink = "https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=45176738&css=https://annexcatrescue.ca/wp-content/themes/annexcatrescue/catstyle.css";
         default:
-            catName = "unavailable";
             break;
     }
     return [catName,imagePath,catLink];
