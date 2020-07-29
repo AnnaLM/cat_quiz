@@ -20,10 +20,28 @@ function returnVal(){
     document.getElementById("congrats").innerHTML = "Congratulations!";
     document.getElementById("matchHead").innerHTML = "You have been matched with:";
     document.getElementById("matchCat").innerHTML = results[0];
+    document.getElementById("matchScore").innerHTML = results[3]+"% match";
+    document.getElementById("catPic").style.display='block';
     document.getElementById("catPic").src = results[1];
     document.getElementById("catPic").alt = "photo of cat chosen";
     document.getElementById("toCat").style.display='block';    
     document.getElementById("toCat").href = results[2];
+    document.getElementById("back").style.display='block';
+}
+function backToQuiz(){
+    document.getElementById("catQuiz").style.display='block';
+    document.getElementById("title").style.display='block';
+    document.getElementById("subhead").style.display='block';
+    document.getElementById("go").style.display='block';
+    document.getElementById("congrats").innerHTML = "";
+    document.getElementById("matchHead").innerHTML = "";
+    document.getElementById("matchCat").innerHTML = "";
+    document.getElementById("matchScore").innerHTML = "";
+    document.getElementById("catPic").style.display='none';
+    document.getElementById("catPic").style.display='none';
+    document.getElementById("toCat").style.display='none';    
+    document.getElementById("toCat").style.display='none';
+    document.getElementById("back").style.display='none';
 }
 //find which cat in the array is the best match, and return the name, photo, and link to the cat
 function findMax(ans){
@@ -81,7 +99,7 @@ function findMax(ans){
         default:
             break;
     }
-    return [catName,imagePath,catLink];
+    return [catName,imagePath,catLink,maxVal*100];
 }
 //calculate the match between a cat and the form response
 function matchCat(cat, answers){

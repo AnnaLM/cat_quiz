@@ -28,7 +28,7 @@ button {
     display: inline-block;
     border: none;
     padding: 10px 10px;
-    margin: 20px 0px;
+    margin: 20px 10px;
     margin-bottom: 50px;
     text-decoration: none;
     background: rgb(144, 52, 180);
@@ -43,9 +43,9 @@ button {
 }
 .button {
     display: inline-block;
-    border: none;
+    border-width: none;
     padding: 10px 10px;
-    margin: 20px 0px;
+    margin: 20px 10px;
     margin-bottom: 50px;
     text-decoration: none;
     background: rgb(144, 52, 180);
@@ -57,9 +57,6 @@ button {
     cursor: pointer;
     text-align: center;    
     border-radius: 20px;
-    left: 50%;
-    position: fixed;
-    margin-left: -50px;
     transition: background 250ms ease-in-out, 
 }
 select {
@@ -73,9 +70,13 @@ select {
     background-color: rgb(221, 221, 221);
     font-size: medium;
 }  
-.center {
+.centerImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-  }
+}
+.centerLine{      
+    display: flex;
+    justify-content: center;
+}
